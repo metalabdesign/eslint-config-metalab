@@ -74,7 +74,8 @@ module.exports = {
     "no-trailing-spaces": 2,
 
     // ?
-    "no-extra-parens": 2,
+    // See: https://github.com/yannickcr/eslint-plugin-react/issues/86
+    "no-extra-parens": 0,
 
     // There are no such thing as "private" properties. Use closure
     // variables if you really need isolation.
