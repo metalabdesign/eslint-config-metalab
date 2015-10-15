@@ -19,7 +19,7 @@ module.exports = {
     "react/prop-types": 2,
     "react/react-in-jsx-scope": 0,
     "react/self-closing-comp": 2,
-    "react/wrap-multilines": 0,
+    "react/wrap-multilines": 2,
     "react/sort-comp": [2, {
       "order": [
         "displayName",
