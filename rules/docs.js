@@ -1,10 +1,10 @@
 module.exports = {
-  "rules": {
+  rules: {
     // Enforce good documentation.
-    "valid-jsdoc": [2, {
-      "prefer": {
-        "return": "returns"
-      }
-    }]
-  }
-}
+    'valid-jsdoc': [ 2, {
+      prefer: {
+        return: 'returns',
+      },
+    } ],
+  },
+};
