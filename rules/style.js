@@ -41,6 +41,8 @@ module.exports = {
       "afterColon": true
     }],
 
+    "array-bracket-spacing": [2, "always"],
+
     // 80 column max in order to fit multiple panes on a screen.
     // TODO: Figure out how to incorporate tab sizing dynamically.
     "max-len": [2, 80, 2],
