@@ -12,7 +12,7 @@ module.exports = {
     "comma-dangle": [2, "always-multiline"],
 
     // http://eslint.org/docs/rules/no-cond-assign
-    "no-cond-assign": [2, "always"],
+    "no-cond-assign": [2, "except-parens"],
 
     // http://eslint.org/docs/rules/no-console
     "no-console": 1,
