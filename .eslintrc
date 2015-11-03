@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "./classic.js",
+    "./node.js"
+  ]
+}
