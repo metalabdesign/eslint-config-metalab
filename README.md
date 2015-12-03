@@ -13,7 +13,7 @@ Just add the following to your `.eslintrc`:
 ```json
 {
   "extends": [
-    "metalab/standard",
+    "metalab/browser",
     "metalab/react"
   ]
 }
@@ -27,10 +27,11 @@ eslint --ignore-path .gitignore
 
 It's recommended you use some combination of the rule packages:
 
- * `classic` - Old ES5/non-babel code.
+ * `legacy` - Old ES5/non-babel code.
+ * `browser` - If you're targeting the DOM environment.
  * `node` - If you're targeting the `node` platform.
  * `react` - If you're using the `react` framework.
- * `standard` - If you're using ES6/modern code.
+ * `base` - If you're using ES6/modern code.
 
 If you need more fine-grained control you can import things in the [rules/](rules) directory.
 
@@ -41,7 +42,7 @@ So you've set everything up but you're getting hundreds of errors because your p
 ```json
 {
   "extends": [
-    "metalab/standard",
+    "metalab/browser",
     "metalab/react"
   ],
   "rules": {
