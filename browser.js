@@ -1,5 +1,5 @@
 module.exports = {
   extends: [
-    'metalab/rules/browser',
+    './rules/browser.js',
   ],
 };

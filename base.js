@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    'metalab/legacy',
-    'metalab/rules/babel',
-    'metalab/rules/modern',
+    './legacy.js',
+    './rules/babel.js',
+    './rules/modern.js',
   ],
 };
