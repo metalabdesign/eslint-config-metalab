@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'metalab/base',
-    'metalab/rules/react',
+    './base.js',
+    './rules/react.js',
   ],
 };

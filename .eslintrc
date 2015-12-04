@@ -1,6 +1,9 @@
 {
   "extends": [
-    "./classic.js",
     "./node.js"
-  ]
+  ],
+  "rules": {
+    "quote-props": [ 2, "consistent-as-needed" ],
+    "no-var": 0
+  }
 }
