@@ -1,6 +1,6 @@
 # eslint-config-metalab
 
-Lint JavaScript MetaLab style.
+Lint JavaScript [MetaLab] style.
 
 ## Usage
 
@@ -52,3 +52,5 @@ So you've set everything up but you're getting hundreds of errors because your p
 ```
 
 Clean up the low hanging fruit and progressively iterate to bring beauty and inner peace to your project. :gem:
+
+[MetaLab]: http://www.metalab.co

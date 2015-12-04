@@ -21,5 +21,8 @@
   },
   "peerDependencies": {
     "eslint": "^1.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.8.0"
   }
 }
