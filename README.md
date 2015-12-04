@@ -2,6 +2,10 @@
 
 Lint JavaScript [MetaLab] style.
 
+## Overview
+
+Just a little package for the JavaScript style guidelines used at [MetaLab]. Largely inspired by the rules and guidelines from [AirBnB], but a little bit more opinionated.
+
 ## Usage
 
 ```sh
@@ -54,3 +58,4 @@ So you've set everything up but you're getting hundreds of errors because your p
 Clean up the low hanging fruit and progressively iterate to bring beauty and inner peace to your project. :gem:
 
 [MetaLab]: http://www.metalab.co
+[AirBnB]: https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
