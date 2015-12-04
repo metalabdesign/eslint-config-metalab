@@ -47,10 +47,9 @@ module.exports = {
     'import/no-require': 2,
 
     // All imports should come first, since they're hoisted to the top by
-    // babel automatically anyway. Additionally provide some consistency on
-    // the order in which things are imported.
+    // babel automatically anyway.
     // https://github.com/benmosher/eslint-plugin-import#imports-first
-    'import/imports-first': [ 2, 'absolute-first' ],
+    'import/imports-first': 2,
 
     // No point in importing things twice.
     // https://github.com/benmosher/eslint-plugin-import#no-duplicates
