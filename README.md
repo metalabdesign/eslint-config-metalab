@@ -55,6 +55,17 @@ So you've set everything up but you're getting hundreds of errors because your p
 }
 ```
 
+You can also setup lint checks to _only_ lint files that have been modified on a particular branch, allowing you to bring changes up to spec gradually. First create a new `.eslintrc.next` file containing the new rules you wish to use and then run:
+
+```sh
+# Fetch the names of all the files that have been changed,
+# Filter the list to only have JS files,
+# Lint each of those files with the new config.
+git --no-pager diff --name-only FETCH_HEAD $(git merge-base FETCH_HEAD master) \
+  | egrep '\.js$' \
+  | xargs ./node_modules/.bin/eslint -c .eslintrc.next
+```
+
 Clean up the low hanging fruit and progressively iterate to bring beauty and inner peace to your project. :gem:
 
 [MetaLab]: http://www.metalab.co
