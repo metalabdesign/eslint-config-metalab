@@ -3,5 +3,5 @@ module.exports = {
   // of Javascript and things like JSX. It provides a more consistent experience
   // than trying to use eslint's native `espree`.
   // See: https://github.com/babel/babel-eslint
-  parser: 'babel-eslint',
+  parser: require.resolve('babel-eslint'),
 };
