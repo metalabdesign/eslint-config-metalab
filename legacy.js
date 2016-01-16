@@ -6,5 +6,5 @@ module.exports = {
     './rules/filenames.js',
     './rules/import.js',
     './rules/style.js',
-  ],
+  ].map(require.resolve),
 };

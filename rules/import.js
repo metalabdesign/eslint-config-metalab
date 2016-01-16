@@ -63,5 +63,5 @@ module.exports = {
 
 // If using babel, then be sure to parse the code as ES6.
 if (hasBabel) {
-  module.exports.settings['import/parser'] = 'babel-eslint';
+  module.exports.settings['import/parser'] = require.resolve('babel-eslint');
 }
