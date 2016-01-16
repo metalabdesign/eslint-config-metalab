@@ -14,15 +14,18 @@
     "test": "npm run lint"
   },
   "dependencies": {
-    "babel-eslint": "^5.0.0-beta4",
+    "babel-eslint": "^5.0.0-beta4"
+  },
+  "peerDependencies": {
+    "eslint": "^1.10.3",
     "eslint-plugin-filenames": "^0.2.0",
     "eslint-plugin-import": "^0.11.0",
     "eslint-plugin-react": "^3.11.2"
   },
-  "peerDependencies": {
-    "eslint": "^1.10.3"
-  },
   "devDependencies": {
-    "eslint": "^1.10.3"
+    "eslint": "^1.10.3",
+    "eslint-plugin-filenames": "^0.2.0",
+    "eslint-plugin-import": "^0.11.0",
+    "eslint-plugin-react": "^3.11.2"
   }
 }
