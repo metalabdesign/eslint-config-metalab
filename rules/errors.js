@@ -20,6 +20,11 @@ module.exports = {
     // http://eslint.org/docs/rules/comma-dangle
     'comma-dangle': [ 2, 'always-multiline' ],
 
+    // Arrow functions (=>) are similar in syntax to some comparison operators
+    // (>, <, <=, and >=). This rule warns against using the arrow function
+    // syntax in places where a condition is expected.
+    'no-arrow-condition': 2,
+
     // In conditional statements, it is very easy to mistype a comparison
     // operator (such as ==) as an assignment operator (such as =). This
     // prevents those common mistakes and ensures assignment is actually
@@ -146,6 +151,13 @@ module.exports = {
     // space in the code and can lead to confusion by readers.
     // http://eslint.org/docs/rules/no-unused-vars
     'no-unused-vars': 2,
+
+    // In JavaScript, prior to ES6, variable and function declarations are
+    // hoisted to the top of a scope, so it's possible to use identifiers before
+    // their formal declarations in code. This can be confusing and some believe
+    // it is best to always declare variables and functions before using them.
+    // http://eslint.org/docs/rules/no-use-before-define
+    'no-use-before-define': 2,
 
     // As par for the JavaScript course, NaN is one of the most confusing,
     // inconsistent literals in existence. It's part of the IEEE floating

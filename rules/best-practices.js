@@ -1,3 +1,5 @@
+/* eslint no-magic-numbers: 0 */
+
 module.exports = {
   // For complete listing of rules and what they do, check out the docs.
   // See: https://github.com/eslint/eslint/tree/master/docs/rules
@@ -94,6 +96,12 @@ module.exports = {
     // http://eslint.org/docs/rules/no-floating-decimal
     'no-floating-decimal': 2,
 
+    // Attempt to guard against people using `this` when they shouldn't be. For
+    // cases which can result in undefined runtime behavior the author can mark
+    // the consumption of `this` in documentation and that will pass the rule.
+    // http://eslint.org/docs/rules/no-invalid-this
+    'no-invalid-this': 2,
+
     // There are some other ways to pass a string and have it interpreted as
     // code. Disable them for the same reasons as `eval`.
     // http://eslint.org/docs/rules/no-implied-eval
@@ -110,6 +118,11 @@ module.exports = {
     //  iterator function like `forEach`.
     // http://eslint.org/docs/rules/no-loop-func
     'no-loop-func': 2,
+
+    // 'Magic numbers' are numbers that occur multiple time in code without an
+    // explicit meaning. They should preferably be replaced by named constants.
+    // http://eslint.org/docs/rules/no-magic-numbers
+    'no-magic-numbers': 2,
 
     // It's possible to create multiline strings in JavaScript by using a slash
     // before a newline. Use template strings instead.

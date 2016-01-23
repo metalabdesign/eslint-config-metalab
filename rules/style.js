@@ -1,3 +1,5 @@
+/* eslint no-magic-numbers: 0 */
+
 module.exports = {
   // For complete listing of rules and what they do, check out the docs.
   // See: https://github.com/eslint/eslint/tree/master/docs/rules
@@ -8,6 +10,12 @@ module.exports = {
     // http://eslint.org/docs/rules/indent
     // http://programmers.stackexchange.com/questions/57
     'indent': [ 2, 2 ],
+
+    // Arrow functions can omit parentheses when they have exactly one
+    // parameter. In all other cases the parameter(s) must be wrapped in
+    // parentheses. This enforces the consistency.
+    // http://eslint.org/docs/rules/arrow-parens
+    'arrow-parens': [ 2, 'always' ],
 
     // The one true brace style. (That's actually what it's called).
     // http://eslint.org/docs/rules/brace-style
@@ -47,6 +55,11 @@ module.exports = {
     // and source maps this isn't really an issue.
     // http://eslint.org/docs/rules/func-names
     'func-names': 0,
+
+    // Mostly here to ensure consistency and avoid scope-hoisting. Either way
+    // is viable however.
+    // http://eslint.org/docs/rules/func-style
+    'func-style': [ 2, 'expression' ],
 
     // Things look nice "{ like: this }" and not "{like:this}".
     // http://eslint.org/docs/rules/key-spacing
