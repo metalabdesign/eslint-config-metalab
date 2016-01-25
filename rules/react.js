@@ -12,6 +12,16 @@ module.exports = {
     // HTML5 spec and requires less typing.
     'react/jsx-boolean-value': 2,
 
+    // Make it so that people don't have their closing tags all over the place.
+    'react/jsx-closing-bracket-location': [ 2, 'tag-aligned' ],
+
+    // Keep consistent with the normal indentation style.
+    'react/jsx-indent-props': [ 2, 2 ],
+
+    // Warn if an element that likely requires a key prop – namely, one present
+    // in an array literal or an arrow function expression.
+    'react/jsx-key': 2,
+
     // This rules can help you locate potential ReferenceErrors resulting from
     // misspellings or missing components. Akin to `no-undef`.
     'react/jsx-no-undef': 2,
