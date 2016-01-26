@@ -22,8 +22,10 @@ module.exports = {
 
     // Arrow functions (=>) are similar in syntax to some comparison operators
     // (>, <, <=, and >=). This rule warns against using the arrow function
-    // syntax in places where a condition is expected.
-    'no-arrow-condition': 2,
+    // syntax in places where a condition is expected. After seeing this in
+    // action I don't really like having it on; it doesn't really catch anything
+    // I've written and makes code more bloated.
+    'no-arrow-condition': 0,
 
     // In conditional statements, it is very easy to mistype a comparison
     // operator (such as ==) as an assignment operator (such as =). This
