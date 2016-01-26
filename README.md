@@ -2,6 +2,11 @@
 
 Lint JavaScript [MetaLab] style.
 
+![build status](http://img.shields.io/travis/metalabdesign/eslint-config-metalab/master.svg?style=flat)
+![license](http://img.shields.io/npm/l/eslint-config-metalab.svg?style=flat)
+![version](http://img.shields.io/npm/v/eslint-config-metalab.svg?style=flat)
+![downloads](http://img.shields.io/npm/dm/eslint-config-metalab.svg?style=flat)
+
 ## Overview
 
 Just a little package for the JavaScript style guidelines used at [MetaLab]. Largely inspired by the rules and guidelines from [AirBnB], but a little bit more opinionated.
