@@ -39,6 +39,6 @@ module.exports = {
     // JSX is not HTML. JSX is JavaScript. We use single quotes in JavaScript
     // because they're easier to type.
     // http://eslint.org/docs/rules/jsx-quotes
-    'jsx-quotes': [ 2, 'prefer-single' ],
+    'jsx-quotes': [2, 'prefer-single'],
   },
 };
