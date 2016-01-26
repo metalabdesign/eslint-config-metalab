@@ -19,12 +19,12 @@ module.exports = {
     // around blocks, even when they are optional, because it can lead to bugs
     // and reduces code clarity.
     // http://eslint.org/docs/rules/curly
-    'curly': [ 2, 'multi-line' ],
+    'curly': [2, 'multi-line'],
 
     // Enforce a reasonable cap on functions spiralling out of control
     // with many branches.
     // http://eslint.org/docs/rules/complexity
-    'complexity': [ 2, 10 ],
+    'complexity': [2, 10],
 
     // If you have a switch block you should always cover all possible cases.
     // Since Javascript has a bad "type system" we have to have a default case
@@ -35,9 +35,9 @@ module.exports = {
     // Dot notation is often preferred because it is easier to read, less
     // verbose, and works better with aggressive JavaScript minimizers.
     // http://eslint.org/docs/rules/dot-notation
-    'dot-notation': [ 2, {
+    'dot-notation': [2, {
       allowKeywords: true,
-    } ],
+    }],
 
     // JavaScript "types" to the rescue again! `==` offers incredibly
     // inconsistent checking resulting in hard-to-find errors.
@@ -232,7 +232,7 @@ module.exports = {
 
     // Avoid pitfalls when trying to call a just-declared function.
     // http://eslint.org/docs/rules/wrap-iife
-    'wrap-iife': [ 2, 'any' ],
+    'wrap-iife': [2, 'any'],
 
     // Provide a consistent way of doing comparisons. This way is arguably a
     // more natural way to describe the comparison.

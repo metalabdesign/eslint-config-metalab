@@ -13,10 +13,10 @@ module.exports = {
     'react/jsx-boolean-value': 2,
 
     // Make it so that people don't have their closing tags all over the place.
-    'react/jsx-closing-bracket-location': [ 2, 'tag-aligned' ],
+    'react/jsx-closing-bracket-location': [2, 'tag-aligned'],
 
     // Keep consistent with the normal indentation style.
-    'react/jsx-indent-props': [ 2, 2 ],
+    'react/jsx-indent-props': [2, 2],
 
     // Warn if an element that likely requires a key prop – namely, one present
     // in an array literal or an arrow function expression.
@@ -42,9 +42,9 @@ module.exports = {
     // imports à la `import { ... } from 'react';` it makes more sense to alias
     // the pragma to `createElement`. This results, roughly, in:
     // `import { Component, createElement, ... } from 'react';`
-    'react/jsx-uses-react': [ 2, {
+    'react/jsx-uses-react': [2, {
       pragma: 'createElement',
-    } ],
+    }],
 
     // This is necessary for `no-unused-vars` to work. It ensures that when JSX
     // consumes variables they are marked as "used".
@@ -52,7 +52,7 @@ module.exports = {
 
     // Updating the state after a component mount will trigger a second render()
     // call and can lead to property/layout thrashing.
-    'react/no-did-mount-set-state': [ 2, 'allow-in-func' ],
+    'react/no-did-mount-set-state': [2, 'allow-in-func'],
 
     // Updating the state after a component update will trigger a second
     // render() call and can lead to property/layout thrashing.
@@ -92,7 +92,7 @@ module.exports = {
     'react/wrap-multilines': 2,
 
     // Provide consistent ordering for class-style React component properties.
-    'react/sort-comp': [ 2, {
+    'react/sort-comp': [2, {
       order: [
         'displayName',
         'propTypes',
@@ -121,6 +121,6 @@ module.exports = {
         '/^render.+$/',
         'render',
       ],
-    } ],
+    }],
   },
 };

@@ -18,7 +18,7 @@ module.exports = {
     // sometimes making it hard to tell which lines were intended to be changed
     // and making `git blame` mark one line with a possibly unrelated commit.
     // http://eslint.org/docs/rules/comma-dangle
-    'comma-dangle': [ 2, 'always-multiline' ],
+    'comma-dangle': [2, 'always-multiline'],
 
     // Arrow functions (=>) are similar in syntax to some comparison operators
     // (>, <, <=, and >=). This rule warns against using the arrow function
@@ -30,7 +30,7 @@ module.exports = {
     // prevents those common mistakes and ensures assignment is actually
     // intentional.
     // http://eslint.org/docs/rules/no-cond-assign
-    'no-cond-assign': [ 2, 'except-parens' ],
+    'no-cond-assign': [2, 'except-parens'],
 
     // While fine for debugging, (or in exceptional cases like as a plugin to a
     // logging mechanism), console output generally does not belong in
@@ -122,7 +122,7 @@ module.exports = {
     // quotes are extra and unecessary since the majority of properties should
     // be camel-cased. However, sometimes you need those odd-named properties.
     // http://eslint.org/docs/rules/quote-props
-    'quote-props': [ 2, 'as-needed' ],
+    'quote-props': [2, 'as-needed'],
 
     // Sparse arrays contain empty slots, most frequently due to multiple commas
     // being used in an array literal. Did the developer intend for there to be
