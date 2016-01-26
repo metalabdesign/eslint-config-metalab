@@ -65,11 +65,16 @@ npm run lint
 
 It's recommended you use some combination of the rule packages:
 
+*Language Presets*
  * `legacy` - Old ES5/non-babel code.
- * `browser` - If you're targeting the DOM environment.
- * `node` - If you're targeting the `node` platform.
- * `react` - If you're using the `react` framework.
  * `base` - If you're using ES6/modern code.
+
+*Environment Presets*
+ * `browser` - If you're targeting the DOM environment.
+ * `node` - If you're targeting the `node` environment.
+
+*Framework Presets*
+ * `react` - If you're using code with the `react` framework.
 
 If you need more fine-grained control you can import things in the [rules/](rules) directory.
 

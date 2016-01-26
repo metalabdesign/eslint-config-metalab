@@ -1,5 +1,6 @@
 {
   "extends": [
+    "./legacy.js",
     "./node.js"
   ],
   "rules": {
