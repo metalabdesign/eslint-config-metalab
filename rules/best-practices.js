@@ -1,5 +1,3 @@
-/* eslint no-magic-numbers: 0 */
-
 module.exports = {
   // For complete listing of rules and what they do, check out the docs.
   // See: https://github.com/eslint/eslint/tree/master/docs/rules
@@ -121,8 +119,11 @@ module.exports = {
 
     // 'Magic numbers' are numbers that occur multiple time in code without an
     // explicit meaning. They should preferably be replaced by named constants.
+    // However, after some usage, it appears this is best enforced by developer
+    // sensibilities – there are simply too many cases where the context makes
+    // the given value obvious and constants are not warranted.
     // http://eslint.org/docs/rules/no-magic-numbers
-    'no-magic-numbers': 2,
+    'no-magic-numbers': 0,
 
     // It's possible to create multiline strings in JavaScript by using a slash
     // before a newline. Use template strings instead.
