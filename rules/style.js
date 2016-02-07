@@ -1,5 +1,3 @@
-/* eslint no-magic-numbers: 0 */
-
 module.exports = {
   // For complete listing of rules and what they do, check out the docs.
   // See: https://github.com/eslint/eslint/tree/master/docs/rules
