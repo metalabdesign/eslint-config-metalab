@@ -44,7 +44,8 @@ module.exports = {
 
     // Always prefere ES6 `import` unless explicitly disabled due to comment.
     // https://github.com/benmosher/eslint-plugin-import#no-require
-    'import/no-require': 2,
+    'import/no-commonjs': 2,
+    'import/no-amd': 2,
 
     // All imports should come first, since they're hoisted to the top by
     // babel automatically anyway.

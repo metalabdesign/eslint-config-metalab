@@ -160,8 +160,8 @@ module.exports = {
     }],
 
     // Enforce whitespace for visual clarity.
-    // http://eslint.org/docs/rules/space-after-keywords
-    'space-after-keywords': [2, 'always'],
+    // http://eslint.org/docs/rules/keyword-spacing
+    'keyword-spacing': 2,
 
     // Enforce whitespace for visual clarity.
     // http://eslint.org/docs/rules/space-before-blocks
@@ -177,10 +177,6 @@ module.exports = {
     // Enforce whitespace for visual clarity.
     // http://eslint.org/docs/rules/space-infix-ops
     'space-infix-ops': 2,
-
-    // Enforce whitespace for visual clarity.
-    // http://eslint.org/docs/rules/space-return-throw-case
-    'space-return-throw-case': 2,
 
     // Enforce whitespace for visual clarity.
     // http://eslint.org/docs/rules/spaced-comment
