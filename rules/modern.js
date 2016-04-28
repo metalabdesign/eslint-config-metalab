@@ -41,4 +41,8 @@ module.exports = {
     // http://eslint.org/docs/rules/jsx-quotes
     'jsx-quotes': [2, 'prefer-single'],
   },
+  env: {
+    // Add globals for `Promise` and friends.
+    es6: true,
+  },
 };
