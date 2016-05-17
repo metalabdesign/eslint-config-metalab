@@ -13,12 +13,15 @@ Just a little package for the JavaScript style guidelines used at [MetaLab]. Lar
 
 ## Usage
 
+*NOTE*: There are unfortunately a lot of `peerDependencies`. Even though you might not use all the rules or presets these plugins provide, they still have to be installed alongside your application until [this issue](https://github.com/eslint/eslint/issues/3458) is fixed.
+
 ```sh
 npm install --save-dev \
   eslint \
   eslint-config-metalab \
   eslint-plugin-filenames \
   eslint-plugin-import \
+  eslint-plugin-lodash-fp \
   eslint-plugin-react
 ```
 
