@@ -43,6 +43,10 @@ module.exports = {
     // of errors if you are used to write plain HTML.
     'react/no-unknown-property': 2,
 
+    // Stateless components are generally preferable because they're easier
+    // to reason about, simpler to write and (eventually) more performant.
+    'react/prefer-stateless-function': 2,
+
     // This is turned off in favor of using `flowtype` to annotate stateless
     // function components. If your project is heavy on non-stateless components
     // then you shoud turn this on.

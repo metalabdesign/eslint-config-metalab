@@ -12,6 +12,10 @@ module.exports = {
     // Make it so that people don't have their closing tags all over the place.
     'react/jsx-closing-bracket-location': [2, 'tag-aligned'],
 
+    // Ensure consistency in property styling. Either all single line or all
+    // multi-line.
+    'react/jsx-first-prop-new-line': [2, 'multiline'],
+
     // Keep consistent with the normal indentation style.
     'react/jsx-indent-props': [2, 2],
 
