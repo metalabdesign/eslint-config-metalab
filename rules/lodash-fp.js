@@ -20,14 +20,14 @@ module.exports = {
     'lodash-fp/no-extraneous-function-wrapping': 2,
 
     // No extraneous parameters in iteratees.
-    'no-extraneous-iteratee-args': 2,
+    'lodash-fp/no-extraneous-iteratee-args': 2,
 
     // Avoid the performance overhead of `compose(f)`.
     'lodash-fp/no-single-composition': 2,
 
     // Prevent `import {foo} from 'lodash/fp'`. This is here at least until
     // lodash@5 where modules are first-class citizens.
-    'no-submodule-destructuring': 2,
+    'lodash-fp/no-submodule-destructuring': 2,
 
     // Prefer `_.compact` over `_.filter(_.identity)`.
     'lodash-fp/prefer-compact': 2,
