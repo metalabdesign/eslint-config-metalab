@@ -30,14 +30,13 @@ module.exports = {
     // render() call and can lead to property/layout thrashing.
     'react/no-did-update-set-state': 2,
 
-    // Prevent one file from having more than one component. In general, one
-    // component per file allows for strong isolation, easier testing and
-    // easier stubbing/mocking. For the cases in which truly private sub-
-    // components are needed, they can be provided as class methods on class
-    // components or as closures in stateless components. This is intentionally
-    // a little obtuse to encourage the minimum component "unit" being able to
-    // stand on and be tested on its own.
-    'react/no-multi-comp': 2,
+    // In general, one component per file allows for strong isolation, easier
+    // testing and easier stubbing/mocking. This strategy is alright for full
+    // class components but becomes annoying when dealing with stateless
+    // components or indeed any small utility functions you have for generating
+    // some set components you need (e.g. an iterator for a map call). Overall
+    // this winds up being more a hinderance than a help.
+    'react/no-multi-comp': 0,
 
     // In JSX all DOM properties and attributes should be camelCased to be
     // consistent with standard JavaScript style. This can be a possible source
