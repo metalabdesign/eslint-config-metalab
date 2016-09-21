@@ -13,18 +13,8 @@ module.exports = {
     'import',
   ],
 
-  settings: {
-    'import/resolve': {
-      moduleDirectory: [
-        'node_modules',
-        // There's no nice way of doing this yet. Presently all webpack
-        // configurations incorporate this to allow referencing source code
-        // from way up in the tree easily, so this is just hard-coded for now.
-        // Maybe there will eventually be a `.module_paths` file or something.
-        './src',
-      ],
-    },
-  },
+  settings: {},
+
   // For complete listing of rules and what they do, check out the docs.
   // See: https://github.com/benmosher/eslint-plugin-import
   rules: {
@@ -65,4 +55,5 @@ module.exports = {
 // If using babel, then be sure to parse the code as ES6.
 if (hasBabel) {
   module.exports.settings['import/parser'] = require.resolve('babel-eslint');
+  module.exports.settings['import/resolver'] = 'babel-module';
 }
