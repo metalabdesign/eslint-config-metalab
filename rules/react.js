@@ -24,7 +24,7 @@ module.exports = {
 
     // Updating the state after a component mount will trigger a second render()
     // call and can lead to property/layout thrashing.
-    'react/no-did-mount-set-state': [2, 'allow-in-func'],
+    'react/no-did-mount-set-state': 2,
 
     // Updating the state after a component update will trigger a second
     // render() call and can lead to property/layout thrashing.

@@ -15,20 +15,22 @@
     "test": "npm run lint && npm run smoke"
   },
   "dependencies": {
-    "babel-eslint": "^6.0.4"
+    "babel-eslint": "^6.0.4",
+    "eslint-import-resolver-babel-module": "^2.0.1"
   },
   "peerDependencies": {
-    "eslint": "^2.10.2",
-    "eslint-plugin-filenames": "^0.2.0",
-    "eslint-plugin-import": "^1.8.0",
-    "eslint-plugin-lodash-fp": "^1.2.0",
-    "eslint-plugin-react": "^5.1.1"
+    "eslint": "^3.5.0",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-lodash-fp": "^2.0.1",
+    "eslint-plugin-react": "^6.3.0"
   },
   "devDependencies": {
-    "eslint": "^2.10.2",
-    "eslint-plugin-filenames": "^0.2.0",
-    "eslint-plugin-import": "^1.8.0",
-    "eslint-plugin-lodash-fp": "^1.2.0",
-    "eslint-plugin-react": "^5.1.1"
+    "babel-plugin-module-resolver": "^2.2.0",
+    "eslint": "^3.5.0",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-lodash-fp": "^2.0.1",
+    "eslint-plugin-react": "^6.3.0"
   }
 }

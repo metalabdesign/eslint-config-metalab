@@ -42,7 +42,7 @@ module.exports = {
     // Enforce multi-line JSX to be enclosed with (). This provides more legible
     // JSX syntax where tag aligment happens on indentation boundaries for the
     // opening and closing tag.
-    'react/wrap-multilines': 2,
+    'react/jsx-wrap-multilines': 2,
 
     // Don't let people do silly things.
     'react/jsx-equals-spacing': [2, 'never'],
