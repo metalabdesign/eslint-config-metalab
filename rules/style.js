@@ -1,3 +1,13 @@
+var hasBabel = false;
+
+// Determine if we are using babel or not.
+try {
+  require.resolve('babel-eslint');
+  hasBabel = true;
+} catch (err) {
+  // If we can't load babel then stop caring.
+}
+
 module.exports = {
   // For complete listing of rules and what they do, check out the docs.
   // See: https://github.com/eslint/eslint/tree/master/docs/rules
@@ -187,3 +197,11 @@ module.exports = {
     'consistent-this': [2, '_this'],
   },
 };
+
+if (hasBabel) {
+  // Copy existing config to babel variants.
+  module.exports.rules['babel/object-curly-spacing'] =
+    module.exports.rules['object-curly-spacing'];
+  // Disable non-babel variants.
+  module.exports.rules['object-curly-spacing'] = 0;
+}
