@@ -17,7 +17,7 @@ module.exports = {
     'lodash-fp/no-chain': 2,
 
     // Avoid unnecessary function wrapping.
-    'lodash-fp/no-extraneous-function-wrapping': 2,
+    'lodash-fp/no-extraneous-function-wrapping': 0,
 
     // No extraneous parameters in iteratees.
     'lodash-fp/no-extraneous-iteratee-args': 2,
