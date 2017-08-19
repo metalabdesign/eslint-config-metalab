@@ -13,16 +13,8 @@ Just a little package for the JavaScript style guidelines used at [MetaLab]. Lar
 
 ## Usage
 
-*NOTE*: There are unfortunately a lot of `peerDependencies`. Even though you might not use all the rules or presets these plugins provide, they still have to be installed alongside your application until [this issue](https://github.com/eslint/eslint/issues/3458) is fixed.
-
 ```sh
-npm install --save-dev \
-  eslint \
-  eslint-config-metalab \
-  eslint-plugin-filenames \
-  eslint-plugin-import \
-  eslint-plugin-lodash-fp \
-  eslint-plugin-react
+npm install --save-dev eslint eslint-config-metalab
 ```
 
 Just add the following to your `.eslintrc`:
@@ -104,6 +96,8 @@ You can disable the noisiest rules by simply temporarily blacklisting them:
   }
 }
 ```
+
+NOTE: The plugins this package uses are namespaced under `metalab/`. So for example, the rule `import/no-commonjs` becomes `metalab/import/no-commonjs`. This prevents users from having to install 10 different `eslint` plugins as dependencies and avoids all the `peerDependency` warnings that can happen when versions get bumped. This means if you want to disable a rule you need to disable the `metalab/` prefixed version.
 
 ### Automatic Fixing
 

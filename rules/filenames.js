@@ -1,14 +1,10 @@
 module.exports = {
-  plugins: [
-    'filenames',
-  ],
-
   // For complete listing of rules and what they do, check out the docs.
   // See: https://github.com/selaux/eslint-plugin-filenames
   rules: {
-    // Enforce the idiomatic kebab-case instead of snake_case or PascalCase.
-    // Also prevents cross-platform casing issues.
+    // The filename should match whatever is being exported. This seems to be
+    // a common pattern used in a lot of JS projects and libraries right now.
     // https://github.com/selaux/eslint-plugin-filenames
-    'filenames/match-regex': [2, '^[a-z0-9.-]+$', true],
+    'metalab/filenames/match-exported': [2, null, '\\..*$'],
   },
 };

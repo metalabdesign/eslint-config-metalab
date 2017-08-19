@@ -1,4 +1,4 @@
-import {createElement} from 'react';
+import React from 'react';
 
 const Child = () => (
   <span>Hello</span>
