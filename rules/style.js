@@ -1,8 +1,11 @@
 var hasBabel = false;
+var resolve = require('resolve');
 
 // Determine if we are using babel or not.
 try {
-  require.resolve('babel-eslint');
+  resolve.sync('babel-core', {
+    basedir: module.parent.paths[0],
+  });
   hasBabel = true;
 } catch (err) {
   // If we can't load babel then stop caring.
@@ -201,7 +204,7 @@ module.exports = {
 
 if (hasBabel) {
   // Copy existing config to babel variants.
-  module.exports.rules['babel/object-curly-spacing'] =
+  module.exports.rules['metalab/babel/object-curly-spacing'] =
     module.exports.rules['object-curly-spacing'];
   // Disable non-babel variants.
   module.exports.rules['object-curly-spacing'] = 0;

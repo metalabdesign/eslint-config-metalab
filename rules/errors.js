@@ -152,7 +152,12 @@ module.exports = {
     // likely an error due to incomplete refactoring. Such variables take up
     // space in the code and can lead to confusion by readers.
     // http://eslint.org/docs/rules/no-unused-vars
-    'no-unused-vars': 2,
+    'no-unused-vars': [2, {
+      // TODO: Maybe add `caughtErrors: "all"`
+      varsIgnorePattern: '^_',
+      argsIgnorePattern: '^_',
+      caughtErrorsIgnorePattern: '^_',
+    }],
 
     // In JavaScript, prior to ES6, variable and function declarations are
     // hoisted to the top of a scope, so it's possible to use identifiers before
