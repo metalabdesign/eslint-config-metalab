@@ -22,8 +22,7 @@ Just add the following to your `.eslintrc`:
 ```json
 {
   "extends": [
-    "metalab/base",
-    "metalab/browser",
+    "metalab",
     "metalab/react"
   ]
 }
@@ -64,10 +63,6 @@ It's recommended you use some combination of the rule packages:
  * `legacy` - Old ES5/non-babel code.
  * `base` - If you're using ES6/modern code.
 
-*Environment Presets*
- * `browser` - If you're targeting the DOM environment.
- * `node` - If you're targeting the `node` environment.
-
 *Framework Presets*
  * `react` - If you're using code with the `react` framework.
 
@@ -88,7 +83,7 @@ You can disable the noisiest rules by simply temporarily blacklisting them:
 ```json
 {
   "extends": [
-    "metalab/browser",
+    "metalab",
     "metalab/react"
   ],
   "rules": {
