@@ -1,5 +1,7 @@
 var hasBabel = false;
+var hasBabelResolver = false;
 var resolve = require('resolve');
+var chalk = require('chalk');
 
 // Determine if we are using babel or not.
 try {
@@ -9,6 +11,16 @@ try {
   hasBabel = true;
 } catch (err) {
   // If we can't load babel then stop caring.
+}
+
+// Determine if we are using babel resolver or not.
+try {
+  resolve.sync('babel-plugin-module-resolver', {
+    basedir: module.parent.paths[0],
+  });
+  hasBabelResolver = true;
+} catch (err) {
+  // If we can't load babel resolver then stop caring.
 }
 
 module.exports = {
@@ -56,7 +68,18 @@ if (hasBabel) {
   module.exports.settings['import/parser'] = require.resolve(
     'babel-eslint'
   );
-  module.exports.settings['import/resolver'] = {};
-  module.exports.settings['import/resolver']
-    [require.resolve('eslint-import-resolver-babel-module')] = {};
+  if (hasBabelResolver) {
+    if (
+      typeof require('babel-plugin-module-resolver').resolvePath !== 'function'
+    ) {
+      console.log( // eslint-disable-line no-console
+        chalk.red('error'),
+        'babel-plugin-module-resolver ^3 required\n'
+      );
+      process.exit(1);
+    }
+    module.exports.settings['import/resolver'] = {};
+    module.exports.settings['import/resolver']
+      [require.resolve('eslint-import-resolver-babel-module')] = {};
+  }
 }
