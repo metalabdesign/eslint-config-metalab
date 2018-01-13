@@ -1,15 +1,5 @@
-var hasBabel = false;
+var hasBabel = require('../util/babel').hasBabel();
 var resolve = require('resolve');
-
-// Determine if we are using babel or not.
-try {
-  resolve.sync('babel-core', {
-    basedir: module.parent.paths[0],
-  });
-  hasBabel = true;
-} catch (err) {
-  // If we can't load babel then stop caring.
-}
 
 module.exports = {
   // For complete listing of rules and what they do, check out the docs.
