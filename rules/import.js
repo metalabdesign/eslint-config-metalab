@@ -18,9 +18,20 @@ try {
   resolve.sync('babel-plugin-module-resolver', {
     basedir: module.parent.paths[0],
   });
+  require('babel-plugin-module-resolver');
   hasBabelResolver = true;
 } catch (err) {
   // If we can't load babel resolver then stop caring.
+  if (/SyntaxError/.test(err.toString())) {
+    if (/v4/.test(process.version)) {
+      console.log( // eslint-disable-line no-console
+        chalk.red('error'),
+        'babel-plugin-module-resolver does not work with node@4\n',
+        'See: https://github.com/tleunen/babel-plugin-module-resolver/pull/222'
+      );
+      process.exit(1);
+    }
+  }
 }
 
 module.exports = {
