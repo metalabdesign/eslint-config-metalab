@@ -1,4 +1,5 @@
 var resolve = require('resolve');
+var chalk = require('chalk');
 
 // TODO: This should resolve to the root package.json of the project.
 var basedir = module.paths[0];
@@ -31,9 +32,20 @@ exports.hasBabelResolver = function() {
     resolve.sync('babel-plugin-module-resolver', {
       basedir: basedir,
     });
+    require('babel-plugin-module-resolver');
     return true;
   } catch (err) {
-    // If we can't load babel resolver then stop caring.
+    if (/SyntaxError/.test(err.toString())) {
+      if (/v4/.test(process.version)) {
+        console.log( // eslint-disable-line no-console
+          chalk.red('error'),
+          'babel-plugin-module-resolver does not work with node@4\n',
+          'See: ' +
+          'https://github.com/tleunen/babel-plugin-module-resolver/pull/222'
+        );
+        process.exit(1);
+      }
+    }
   }
   return false;
 };
