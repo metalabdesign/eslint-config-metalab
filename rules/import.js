@@ -44,21 +44,21 @@ module.exports = {
 
 // If using babel, then be sure to parse the code as ES6.
 if (hasBabel) {
-  module.exports.settings['import/parser'] = require.resolve(
-    'babel-eslint'
-  );
+  module.exports.settings['import/parser'] = require.resolve('babel-eslint');
   if (hasBabelResolver) {
     if (
       typeof require('babel-plugin-module-resolver').resolvePath !== 'function'
     ) {
-      console.log( // eslint-disable-line no-console
+      // eslint-disable-next-line no-console
+      console.log(
         chalk.red('error'),
         'babel-plugin-module-resolver ^3 required\n'
       );
       process.exit(1);
     }
     module.exports.settings['import/resolver'] = {};
-    module.exports.settings['import/resolver']
-      [require.resolve('eslint-import-resolver-babel-module')] = {};
+    module.exports.settings['import/resolver'][
+      require.resolve('eslint-import-resolver-babel-module')
+    ] = {};
   }
 }
