@@ -9,6 +9,7 @@ var plugins = {
   'lodash-fp': 'eslint-plugin-lodash-fp',
   'flowtype': 'eslint-plugin-flowtype',
   'jsx-a11y': 'eslint-plugin-jsx-a11y',
+  'prettier': 'eslint-plugin-prettier',
 };
 
 for (var key in plugins) {
