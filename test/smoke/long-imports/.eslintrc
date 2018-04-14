@@ -1,0 +1,4 @@
+extends:
+  - ../../../base.js
+rules:
+  metalab/import/no-unresolved: 0

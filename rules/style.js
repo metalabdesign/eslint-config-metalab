@@ -87,7 +87,15 @@ module.exports = {
     // the traditional column count and should work well with a large variety
     // of editors.
     // http://eslint.org/docs/rules/max-len
-    'max-len': [2, 80, 2],
+    'max-len': [
+      2,
+      80,
+      2,
+      {
+        ignorePattern: '^import(\\s.+\\sfrom)?\\s.+;$',
+        ignoreUrls: true,
+      },
+    ],
 
     // Since constructor functions are just regular functions, the only defining
     // characteristic is that new is being used as part of the call. Native
