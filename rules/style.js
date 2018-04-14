@@ -4,12 +4,8 @@ module.exports = {
   // For complete listing of rules and what they do, check out the docs.
   // See: https://github.com/eslint/eslint/tree/master/docs/rules
   rules: {
-    // Although tabs make more sense semantically, spaces are just more
-    // pragmatic for now. They're always consistent across all platforms and
-    // editors.
-    // http://eslint.org/docs/rules/indent
-    // http://programmers.stackexchange.com/questions/57
-    'indent': [2, 2],
+    // Prettier takes care of this.
+    'indent': 0,
 
     // Arrow functions can omit parentheses when they have exactly one
     // parameter. In all other cases the parameter(s) must be wrapped in
@@ -91,7 +87,15 @@ module.exports = {
     // the traditional column count and should work well with a large variety
     // of editors.
     // http://eslint.org/docs/rules/max-len
-    'max-len': [2, 80, 2],
+    'max-len': [
+      2,
+      80,
+      2,
+      {
+        ignorePattern: '^import(\\s.+\\sfrom)?\\s.+;$',
+        ignoreUrls: true,
+      },
+    ],
 
     // Since constructor functions are just regular functions, the only defining
     // characteristic is that new is being used as part of the call. Native
@@ -186,15 +190,9 @@ module.exports = {
     // http://eslint.org/docs/rules/space-before-blocks
     'space-before-blocks': 2,
 
-    // Enforce whitespace for visual clarity.
+    // Prettier takes care of this.
     // http://eslint.org/docs/rules/space-before-function-paren
-    'space-before-function-paren': [
-      2,
-      {
-        anonymous: 'never',
-        named: 'never',
-      },
-    ],
+    'space-before-function-paren': 0,
 
     // Enforce whitespace for visual clarity.
     // http://eslint.org/docs/rules/space-infix-ops

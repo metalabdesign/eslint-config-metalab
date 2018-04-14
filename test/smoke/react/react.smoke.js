@@ -4,7 +4,7 @@ const Child = () => <span>Hello</span>;
 
 const Test = () => (
   <div>
-    <Child a b />
+    <Child a b foo="bar" />
   </div>
 );
 

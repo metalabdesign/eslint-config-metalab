@@ -26,3 +26,12 @@ try {
 } catch (err) {
   //
 }
+
+try {
+  resolve.sync('react', {
+    basedir: module.parent.paths[0],
+  });
+  module.exports.extends.push(require.resolve('./rules/react'));
+} catch (err) {
+  //
+}

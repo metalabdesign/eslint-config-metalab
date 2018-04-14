@@ -1,0 +1,2 @@
+import 'fooaoofadgfdggnfadkgadjgagjdjggnjgdkgjndkjgnkdgjdkgndkgjdgndngkdgjdgdngjdgn';
+import * as _foo from 'fooaoofadgfdggnfadkgadjgagjdjggnjgdkgjndkjgnkdgjdkgndkgjdgndngkdgjdgn';
