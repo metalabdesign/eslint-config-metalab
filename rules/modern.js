@@ -35,11 +35,9 @@ module.exports = {
     // http://eslint.org/docs/rules/prefer-template
     'prefer-template': 2,
 
-    // Enforce a quoting style that is consistent with quotes in JavaScript.
-    // JSX is not HTML. JSX is JavaScript. We use single quotes in JavaScript
-    // because they're easier to type.
+    // Prettier enforces the use of double quotes. So that's what we have here.
     // http://eslint.org/docs/rules/jsx-quotes
-    'jsx-quotes': [2, 'prefer-single'],
+    'jsx-quotes': [2, 'prefer-double'],
   },
   env: {
     // Add globals for `Promise` and friends.
