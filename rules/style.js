@@ -1,11 +1,12 @@
 var hasBabel = require('../util/babel').hasBabel();
+var hasPrettier = require('../util/babel').hasPrettier();
 
 module.exports = {
   // For complete listing of rules and what they do, check out the docs.
   // See: https://github.com/eslint/eslint/tree/master/docs/rules
   rules: {
     // Prettier takes care of this.
-    'indent': 0,
+    indent: 0,
 
     // Arrow functions can omit parentheses when they have exactly one
     // parameter. In all other cases the parameter(s) must be wrapped in
@@ -26,14 +27,14 @@ module.exports = {
     // Single quotes are faster to type and seem to be a fairly general
     // convention in the JS community.
     // http://eslint.org/docs/rules/quotes
-    'quotes': [2, 'single', 'avoid-escape'],
+    quotes: [2, 'single', 'avoid-escape'],
 
     // Enforce case guidelines used in Javascript. No variables_like_this or
     // VariablesLikeThis. Thoughts about properties: use an eslint ignore
     // block to marshal bad properties from APIs like foo_bar into foorBar.
     // AirBnB is less strict in this regard.
     // http://eslint.org/docs/rules/camelcase
-    'camelcase': 2,
+    camelcase: 2,
 
     // Spacing around commas improve readability of a list of items.
     // http://eslint.org/docs/rules/comma-spacing
@@ -169,7 +170,7 @@ module.exports = {
     // possibility of introducing an error. This isn't always the case, but good
     // enough for the majority of cases.
     // http://eslint.org/docs/rules/semi
-    'semi': [2, 'always'],
+    semi: [2, 'always'],
 
     // Ensure consistency and improve readability. Don't allow silly things like
     // `for(var foo = 1;foo < 4;++i)`. Instead: `for(var foo = 1; foo < 4; ++i)`
@@ -214,4 +215,9 @@ if (hasBabel) {
     module.exports.rules['object-curly-spacing'];
   // Disable non-babel variants.
   module.exports.rules['object-curly-spacing'] = 0;
+}
+
+if (hasPrettier) {
+  // Let prettier handle max-len itself.
+  module.exports.rules['max-len'] = 0;
 }

@@ -2,14 +2,13 @@
 /* eslint guard-for-in: 0 */
 
 var plugins = {
-  'import': 'eslint-plugin-import',
-  'react': 'eslint-plugin-react',
-  'filenames': 'eslint-plugin-filenames',
-  'babel': 'eslint-plugin-babel',
-  'lodash-fp': 'eslint-plugin-lodash-fp',
-  'flowtype': 'eslint-plugin-flowtype',
+  import: 'eslint-plugin-import',
+  react: 'eslint-plugin-react',
+  filenames: 'eslint-plugin-filenames',
+  babel: 'eslint-plugin-babel',
+  flowtype: 'eslint-plugin-flowtype',
   'jsx-a11y': 'eslint-plugin-jsx-a11y',
-  'prettier': 'eslint-plugin-prettier',
+  prettier: 'eslint-plugin-prettier',
 };
 
 for (var key in plugins) {

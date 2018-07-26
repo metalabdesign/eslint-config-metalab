@@ -19,12 +19,14 @@ module.exports = {
     // around blocks, even when they are optional, because it can lead to bugs
     // and reduces code clarity.
     // http://eslint.org/docs/rules/curly
-    'curly': [2, 'multi-line'],
+    curly: [2, 'multi-line'],
 
-    // Enforce a reasonable cap on functions spiralling out of control
-    // with many branches.
+    // Some functions are just complex by their nature and splitting them up is
+    // more work than its necessary. Although this rule is useful in theory it
+    // tends to fall short in practice. Hopefully most people can realize when
+    // they should split up a function.
     // http://eslint.org/docs/rules/complexity
-    'complexity': [2, 10],
+    complexity: 0,
 
     // If you have a switch block you should always cover all possible cases.
     // Since Javascript has a bad "type system" we have to have a default case
@@ -46,7 +48,7 @@ module.exports = {
     // inconsistent checking resulting in hard-to-find errors.
     // http://eslint.org/docs/rules/eqeqeq
     // http://stackoverflow.com/questions/359494
-    'eqeqeq': 2,
+    eqeqeq: 2,
 
     // Looping over objects with a for in loop will include properties that are
     // inherited through the prototype chain. This behavior can lead to
@@ -229,7 +231,7 @@ module.exports = {
     // Prevent weird behavior from `parseInt`.
     // http://eslint.org/docs/rules/radix
     // http://stackoverflow.com/questions/850341
-    'radix': 2,
+    radix: 2,
 
     // JavaScript's `var` declarations are function-scope, not lexical scope.
     // Ensure that this fact is acknowledged by code.
@@ -243,7 +245,7 @@ module.exports = {
     // Provide a consistent way of doing comparisons. This way is arguably a
     // more natural way to describe the comparison.
     // http://eslint.org/docs/rules/yoda
-    'yoda': 2,
+    yoda: 2,
   },
 };
 

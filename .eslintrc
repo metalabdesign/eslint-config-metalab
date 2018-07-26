@@ -1,12 +1,4 @@
-{
-  "extends": [
-    "./legacy.js",
-  ],
-  "env": {
-    "node": true
-  },
-  "rules": {
-    "quote-props": [ 2, "consistent-as-needed" ],
-    "no-var": 0,
-  }
-}
+extends:
+ - ./legacy.js
+env:
+  node: true
