@@ -4,6 +4,19 @@ var chalk = require('chalk');
 // TODO: This should resolve to the root package.json of the project.
 var basedir = module.paths[0];
 
+exports.hasPrettier = function() {
+  // Determine if we are using prettier or not.
+  try {
+    resolve.sync('prettier', {
+      basedir: basedir,
+    });
+    return true;
+  } catch (err) {
+    // If we can't load prettier then stop caring.
+  }
+  return false;
+};
+
 exports.hasBabel = function() {
   // Determine if we are using babel 7+ or not.
   try {

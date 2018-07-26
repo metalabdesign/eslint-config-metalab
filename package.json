@@ -10,36 +10,34 @@
   "main": "base",
   "repository": "izaakschroeder/eslint-config-metalab",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint --ignore-path .gitignore src/",
+    "lint": "./node_modules/.bin/eslint .",
     "smoke": "./node_modules/.bin/eslint test/smoke",
     "test": "npm run lint && npm run smoke"
   },
   "dependencies": {
-    "babel-eslint": "^8.2.1",
-    "chalk": "^2.3.0",
+    "babel-eslint": "^8.2.6",
+    "chalk": "^2.4.1",
     "eslint-import-resolver-babel-module": "^5.0.0-beta.0",
     "eslint-import-resolver-node": "^0.3.2",
-    "eslint-plugin-babel": "^4.1.2",
-    "eslint-plugin-filenames": "^1.2.0",
-    "eslint-plugin-flowtype": "^2.41.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-lodash-fp": "^2.1.3",
-    "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.10.0",
     "resolve": "^1.5.0"
   },
   "peerDependencies": {
-    "eslint": "^4.5.0"
+    "eslint": "^5.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.44",
-    "babel-plugin-module-resolver": "^3.0.0",
-    "babel-plugin-syntax-flow": "^7.0.0-beta.3",
-    "eslint": "^4.15.0",
-    "flow-bin": "^0.63.1",
-    "lodash": "^4.17.4",
-    "prettier": "^1.12.0",
-    "react": "^16.2.0"
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/plugin-syntax-flow": "^7.0.0-beta.54",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "eslint": "^5.2.0",
+    "flow-bin": "^0.77.0",
+    "prettier": "^1.13.7",
+    "react": "^16.4.1"
   }
 }
